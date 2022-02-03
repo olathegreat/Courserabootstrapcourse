@@ -38,3 +38,12 @@ body{
 .navbar-dark {
      background-color: #512DA8;
 }
+.carouel{
+    background: #512DA8;
+}
+.carousel-item{
+    height: 300px;
+}
+.carousel-item img{
+    position: absolute;
+}
