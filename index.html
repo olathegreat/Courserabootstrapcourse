@@ -44,26 +44,33 @@
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-header">
+            <div class="modal-header" style="background: #512DA8; color: white;">
                 Log in
-                 <button type="button" class="close" data-dismiss="modal">
+                 <button type="button" class="close" data-dismiss="modal" style="color: white;">
                      &times;
                  </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="background: #9575CD;">
                 <form>
                     <div class="form-group row">
-                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
                         </div>
                     </div>     
                     <div class="form-group row">
-                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
                         </div>
                     </div>
+
+                    <div class="row justify-content-center mt-2">             
+                        <div class="col-auto">
+                            <button class="btn btn-primary" href="#reserve">
+                                Login
+                            </button>
+                        </div>
+                   </div>
                 </form>
             </div>
                 
@@ -90,7 +97,7 @@
                 <div class="col-12 col-sm align-self-center mt-2">
                     <div class="text-center">
                         <a role="button"  data-toggle="modal" data-target="#reserve" class="btn btn-block btn-warning nav-link" href="#reserve" 
-                        data-html="true" title="Or call us at <br> +2348169336518 "
+                       
                        >
                             Reserve Table
                         </a>
@@ -105,16 +112,16 @@
     </header>
     <div id="reserve" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <div class="modal-header">
-                Log in
-                 <button type="button" class="close" data-dismiss="modal">
+            <div class="modal-header" style="background: #512DA8; color: white;">
+                <h3 class="card-headertext-white" >Reserve a Table</h3>
+                 <button type="button" class="close" style="color: white;" data-dismiss="modal">
                      &times;
                  </button>
             </div>
-            <div class="modal-body">
-                <div class="card mb-2" id="reserve" data-target="#reserve">
-                    <h3 class="card-header bg-warning text-white" >Reserve a Table</h3>
-                    <div class="card-body">
+            <div class="modal-body" style="background: #9575CD;">
+                <div class="card mb-2" style="background: #9575CD; border: none;" id="reserve" data-target="#reserve">
+                    
+                    <div class="card-body"  style="background: #9575CD; border: none;">
                       <form action="#">
                          <div class="row">
                              <div class="col col-12 col-sm-3">
@@ -139,8 +146,8 @@
         
                              </div>
                              <div class="col col-12 col-sm-9">
-                                 <input type="button" class="btn-success" value="Non-smoking">
-                                 <input type="button" class="btn-danger" value="smoking">
+                                 <input type="button" style="border: none;border-radius: 5px;" class="btn-success" value="Non-smoking">
+                                 <input type="button"  style="border: none;border-radius: 5px;" class="btn-danger" value="smoking">
                              </div>
                          </div>
         
@@ -160,7 +167,7 @@
                               
                              </div>
                         </div>
-                        <div class="row justify-content-center">             
+                        <div class="row justify-content-center mt-0">             
                             <div class="col-auto">
                                 <button class="btn btn-primary" href="#reserve">
                                     Reserve Table
@@ -263,14 +270,14 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3"> 
+            <div class="col-12 col-sm-4 col-md-2 order-sm-last"> 
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <!-- <div class="col col-sm col-md">
                 <h2>Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$ 4.99</span></h2>
                 <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div> -->
-            <div class="media">
+            <div class="media col-12 col-md-8">
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/uthappizza.png" alt="uthapizza">
                 <div class="media-body">
                     <h2>
@@ -285,13 +292,14 @@
         </div>
 
         <div class="media">
+            <div class="col-12 col-sm-4 col-md-2 order-sm-first">
+                <h3>This Month's Promotions</h3>
+            </div>
             <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last" src="./img/buffet.png" alt="uthapizza" height="130" width="130">
            
             <div class="media-body">
-                <div class="col-12 col-sm-4 col-md-3">
-                    <h3>This Month's Promotions</h3>
-                </div>
-                <div class="col col-sm col-md">
+               
+                <div class="col col-sm  col-md-8">
                     <h2>Weekend Grand Buffet <span class="badge badge-danger  mr-3 ">NEW</span></h2>
                     <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                 </div>
@@ -314,7 +322,7 @@
         </div> -->
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-4 col-md-2 order-sm-last">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <!-- <div class="col col-sm col-md">
@@ -322,7 +330,7 @@
                 <h4>Executive Chef</h4>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             </div> -->
-            <div class="media">
+            <div class="media col-12 col-md-8">
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="./img/alberto.png" alt="bighead">
                 <div class="media-body">
                 <h2 class="mt-0">Alberto Somayya</h2>
